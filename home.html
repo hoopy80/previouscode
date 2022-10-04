@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Home</title>
+    </head>
+    <body>
+<h1 style="color:rgb(1, 1, 3); text-decoration: underline;">Welcome to my home page</h1>
+<h2 style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"></h2>
+<h2 style="font-family: Verdana, Geneva, Tahoma, sans-serif;text-decoration: underline">About me</h2>
+<p>I live in Greenford, Middlesex in the borough of Ealing and am upskilling to transition to a career in IT.</p>
+
+
+<h2 style="font-family: Verdana, Geneva, Tahoma, sans-serif;text-decoration: underline">Hobbies</h2>
+<p>I enjoy researching my family history and attending football matches.</p>
+
+<h2 style="font-family: Verdana, Geneva, Tahoma, sans-serif;text-decoration: underline">Skillset</h2>
+<p>I am proficient in Office 365 and was involved in floor-walking in my previous role to assist in the roleout of Windows 10.</p>
+
+<h2 style="font-family: Verdana, Geneva, Tahoma, sans-serif;text-decoration: underline">Links</h2>
+
+
+<a href="file:///D:/Flask-Python/Basic/basic_flask_application/Template/Contact.html">Contact</a>
+<p></p>
+<a href="file:///D:/Flask-Python/Basic/basic_flask_application/Template/Workex.html">Work Experience</a>
+<p></p>
+<a href="file:///D:/Flask-Python/Basic/basic_flask_application/Template/Education.html">Education</a>
+
+
+<form>
+    <input type="text" name="location" placeholder="Enter location to search...">
+    <input type="submit" value="Search">
+
+</form>
+
+</body>
+</html>
+
+<html>
+<head>
+    <title>{{data.name}}</title>
+</head>
+<body>
+<p>{{data.id}}</p>
+<h2 style="text-decoration: underline">{{data.name}}</h2>
+<p>{{data.address}}</p>
+<p><strong>List of Departments</strong></p>
+{% for dep in data.department %}
+<p>{{dep.id}}. {{dep.name}}</p>
+{% endfor %}
+
+</body>
+
+</html>
